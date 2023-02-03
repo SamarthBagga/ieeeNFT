@@ -10,6 +10,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/drei": "^9.56.12",
+    "@react-three/fiber": "^8.10.1",
+    "bootstrap": "^5.2.3",
     "next": "^13.1.0",
     "prism-theme-night-owl": "^1.4.0",
     "prismjs": "^1.29.0",
@@ -17,7 +20,14 @@
     "react-bricks": "latest",
     "react-bricks-ui": "^0.5.3",
     "react-dom": "^18.2.0",
-    "react-slick": "^0.29.0"
+    "react-icons": "^4.7.1",
+    "react-scroll": "^1.8.9",
+    "react-scrollspy-nav": "^1.3.0",
+    "react-slick": "^0.29.0",
+    "react-three-fiber": "^6.0.13",
+    "react-ui-scrollspy": "^2.3.0",
+    "reactstrap": "^9.1.5",
+    "three": "^0.149.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",

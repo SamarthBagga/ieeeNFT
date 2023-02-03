@@ -2,13 +2,27 @@ import { types } from 'react-bricks/frontend'
 import website from 'react-bricks-ui/website'
 import blog from 'react-bricks-ui/blog'
 import HeroUnit from './MyHeroUnit'
-
-
+import Thumbnail from './Thumbnail'
+import Navbar from './Navbar'
+import Hero from './Hero'
+import About from './About'
+import Demo from './Demo'
+import Testimonials from './Testimonials'
+import Three from './Three'
 const bricks: types.Brick<any>[] = [
   ...website, // React Bricks UI
   ...blog,
-  HeroUnit, // Example custom brick
-  // Put here your other bricks...
+  HeroUnit, 
+  Thumbnail,
+  Navbar,
+  Hero,
+  About,
+  Demo,
+  Testimonials,
+  Three,
+
+  
+  
 ]
 
 export default bricks
