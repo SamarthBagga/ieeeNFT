@@ -30,6 +30,11 @@ const Navbar: types.Brick = () => {
 
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+        <li className='navTitle'>
+                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THENFT</Link>
+            </li>
+          <div className="navContent">
             <li className='nav-item'>
                 <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
             </li>
@@ -37,11 +42,15 @@ const Navbar: types.Brick = () => {
                 <Link to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
             </li>
             <li className='nav-item'>
-                <Link to="testimonials" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>FAQS</Link>
-            </li>
-            <li className='nav-item'>
                 <Link to="demo" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Demo</Link>
             </li>
+            <li className='nav-item'>
+                <Link to="testimonials" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>FAQS</Link>
+            </li>
+            
+            </div>
+            <div className="Login"><button className="loginBTN">Login</button></div>
+            {/* <div className="design"></div> */}
             
         </ul>
     </nav>
