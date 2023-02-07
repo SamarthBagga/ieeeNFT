@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.56.12",
     "@react-three/fiber": "^8.10.1",
     "bootstrap": "^5.2.3",
+    "gltf-pipeline": "^4.0.1",
     "next": "^13.1.0",
     "prism-theme-night-owl": "^1.4.0",
     "prismjs": "^1.29.0",
