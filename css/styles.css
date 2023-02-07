@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
+
 
 
 :root {
@@ -27,7 +29,7 @@
     font-size: 1.2rem;
     line-height: 1.2;
     background: linear-gradient(124.02deg, #790084 23.94%, #7248F9 82.5%);
-    font-family: 'Outfit';
+    font-family: 'Outfit', sans-serif;
 
     
 
