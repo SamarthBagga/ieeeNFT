@@ -32,7 +32,7 @@ const Navbar: types.Brick = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
 
         <li className='navTitle'>
-                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THENFT</Link>
+                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THENFT.</Link>
             </li>
           <div className="navContent">
             <li className='nav-item'>

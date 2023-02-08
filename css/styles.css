@@ -3,7 +3,13 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
 
-
+@font-face {
+    font-family: 'Monument';
+    /* src: url('../public/MonumentExtended-Ultrabold.otf'); */
+    src:url('../public/MonumentExtended-Regular.otf');
+    font-weight: 300;
+    font-style: normal;
+    }
 
 :root {
     --primary-color: #5bb462;
@@ -26,10 +32,11 @@
       sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     line-height: 1.2;
     background: linear-gradient(124.02deg, #790084 23.94%, #7248F9 82.5%);
     font-family: 'Outfit', sans-serif;
+
 
     
 
@@ -113,15 +120,15 @@
 
 .header .nav-item {
     padding: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .nav-item .active{
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #D21AD5;
 }
 .header .nav-item a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #D21AD5;
 }
 
 .hamburger {
@@ -132,7 +139,7 @@
 @media screen and (max-width:700px) {
     .header {
         max-width: 100%;
-        background-color: rgba(0,0,0,.9);
+        /* background-color: rgba(0,0,0,.9); */
     }
 
     .header .navbar {
@@ -148,7 +155,7 @@
         left: -100%;
         top: 90px;
         flex-direction: column;
-        background-color: rgba(0,0,0,.9);
+        /* background-color: rgba(0,0,0,.9); */
         width: 100%;
         height: 90vh;
         z-index: 999;
@@ -503,7 +510,7 @@
     width: 50%;
 }
 .navTitle{
-    margin-right: 50%;
+    margin-right: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -512,8 +519,11 @@
 .navContent{
     display: flex;
     justify-content: center;
-    margin-right: 37%;
+    margin-right: 33%;
     font-weight: bold;
+    font-family: 'Monument','sans-serif';
+
+
 }
 .Login{
     display: flex;
@@ -530,6 +540,8 @@
   margin: 4px 2px;
   cursor: pointer;
   font-weight: bold;
+  font-family: 'Monument','sans-serif';
+
     
 }
 .loginBTN{
