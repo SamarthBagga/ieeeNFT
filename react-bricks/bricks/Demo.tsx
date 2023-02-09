@@ -17,15 +17,10 @@ const Demo: types.Brick = () => {
   return (
     <div className='demo' id='demo'>
     <div className='container'>
-        <div className='col-1'>
-            <p>Watch this vid to see the demo</p>
-            <p>this video</p>
-            <p>free nft</p>
-            <button className='button'>free nft</button>
-        </div>
-        <div className='col-2'>
-            <iframe width='570' height='320' src='https://www.youtube.com/embed/oeqP5JtihMA' title='Youtube video player' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-        </div>
+        
+        {/* <div className='col-2'>
+            <iframe className="youtube" src='https://www.youtube.com/embed/oeqP5JtihMA' title='Youtube video player' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        </div> */}
     </div>
 </div>
 

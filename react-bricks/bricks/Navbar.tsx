@@ -22,6 +22,8 @@ const Navbar: types.Brick = () => {
     const logo = require('./images/logo.jpg');
 
   return (
+    //bagga bassi//
+    
     <div className='header'>
     <nav className='navbar'>
         <div className='hamburger' onClick={handleClick}>
@@ -32,17 +34,17 @@ const Navbar: types.Brick = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
 
         <li className='navTitle'>
-                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THENFT.</Link>
+                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>IEEEMUJ.</Link>
             </li>
           <div className="navContent">
             <li className='nav-item'>
-                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+                <Link to="hero" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>HOME</Link>
             </li>
             <li className='nav-item'>
-                <Link to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+                <Link to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>ABOUT</Link>
             </li>
             <li className='nav-item'>
-                <Link to="demo" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Demo</Link>
+                <Link to="demo" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>DEMO</Link>
             </li>
             <li className='nav-item'>
                 <Link to="testimonials" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>FAQS</Link>

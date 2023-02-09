@@ -10,6 +10,13 @@
     font-weight: 300;
     font-style: normal;
     }
+    @font-face {
+        font-family: 'Outfit';
+        /* src: url('../public/MonumentExtended-Ultrabold.otf'); */
+        src:url('../public/outfit/Outfit-Bold.otf');
+        font-weight: 300;
+        font-style: normal;
+        }
 
 :root {
     --primary-color: #5bb462;
@@ -23,6 +30,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    width: 100%;
+    
+
   }
   
   body {
@@ -34,9 +44,8 @@
     -moz-osx-font-smoothing: grayscale;
     /* font-size: 1.2rem; */
     line-height: 1.2;
-    background: linear-gradient(124.02deg, #790084 23.94%, #7248F9 82.5%);
+    /* background: linear-gradient(124.02deg, #790084 23.94%, #7248F9 82.5%); */
     font-family: 'Outfit', sans-serif;
-
 
     
 
@@ -66,6 +75,7 @@
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
+
   }
   
   .button:hover {
@@ -91,8 +101,14 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(0,0,0,.9);
+    /* background-color: rgba(0,0,0,.9); */
+    background-image: url("../public/navbar.png");
+    background-position: center;
+  background-size: cover;
+  z-index: 3;
+ 
     
+
 }
 
 .header .navbar {
@@ -133,13 +149,14 @@
 
 .hamburger {
     display: none;
+    background-color: black;
 }
 
 
 @media screen and (max-width:700px) {
     .header {
         max-width: 100%;
-        /* background-color: rgba(0,0,0,.9); */
+        background-color: rgba(0,0,0,.9);
     }
 
     .header .navbar {
@@ -148,6 +165,7 @@
 
     .hamburger {
         display: block;
+        background-color: black;
     }
 
     .nav-menu {
@@ -155,7 +173,7 @@
         left: -100%;
         top: 90px;
         flex-direction: column;
-        /* background-color: rgba(0,0,0,.9); */
+        background-color: rgba(0,0,0,.9);
         width: 100%;
         height: 90vh;
         z-index: 999;
@@ -174,6 +192,10 @@
     .header .navbar img {
         width: 150px;
     }
+    .other h1{
+        font-size: 30px;
+    }
+    
 }
 
 .hero {
@@ -182,6 +204,11 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    background-image: url("../public/home.svg");
+    background-position:bottom;
+    background-size: cover;
+
+    
     
 }
 
@@ -227,10 +254,14 @@
 
 .hero .button {
     margin: 1rem 0;
-    width: 300px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    color: #333;
+    width: 200px;
+    color: white;
+    background: linear-gradient(142.41deg, #BD24E6 -12.51%, #E40FAC 136.14%);
+border: 2px solid #4AED52;
+border-radius: 6px;
+box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
+
+
 }
 
 .hero .button:hover {
@@ -246,9 +277,36 @@
     .hero .content p:nth-child(4) {
         font-size: 1.6rem;
     }
+    .other .h1 span{
+        font-size: 30px;
+
+
+    }
+    
+    /* .hero .boxNFT{
+        width: 35vw;
+        position: relative;
+        
+    } */
+    .other{
+        width: 10vw;
+    }
+    .nft{
+        width:30%;
+    }
+
 }
 .testimonials {
+    height: 600px;
     width: 100%;
+    background-image: url("../public/about.svg");
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    
 }
 
 .testimonials .container {
@@ -310,52 +368,58 @@
 }
 
 .about {
-    /* background-color: #f8f8f8; */
-    margin: auto;
-    padding: 8rem 1rem 0 1rem;
+    color: #fff;
+    height: 100vh;
     width: 100%;
+    position: relative;
+    
+    background-image: url('../public/about.svg');
+    background-position: 50%;
+    background-color: #03030A;
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+   
+    
+
 }
 
 .about .container {
-    width: 1240px;
-    margin: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.about h2 {
-    font-size: 3rem;
-}
-
-.about .col-2 {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
 }
 
-.about .col-2 p:first-of-type {
-    margin: 2rem 0;
-}
 
-.about .col-2 p:nth-child(4) {
-    font-size: 1.8rem;
-    font-style: italic;
-    font-weight: 600;
-}
 
-.about button {
-    margin-top: 1rem;
-}
+
+
+
+
 
 @media screen and (max-width:940px) {
     .about .container {
         grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
     }
 
     .about .container {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .about .container img {
@@ -363,19 +427,19 @@
         width: 90vw;
     }
 
-    .about .container .col-2 {
-        padding: 0;
-    }
-
-    .about button {
-        margin-bottom: 1rem;
-    }
+    
 }
 
 .demo {
-    margin: 5rem auto;
-    padding: 1rem;
+    
+    height: 900px;
     width: 100%;
+    /* background-image: url("../public/demoReal.svg"); */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .demo .container {
@@ -421,14 +485,15 @@
     }
 
     .demo iframe {
-        width: 100%;
-        height: auto;
+        width: 100vw;
+        height: 70vw;
     }
 }
 
 .about {
     /* background-color: #f8f8f8; */
-    margin: auto;
+     margin: 0;
+    padding: 0;
     padding: 8rem 1rem 0 1rem;
     width: 100%;
 }
@@ -498,17 +563,18 @@
     margin-top: 90px;
     justify-content: left;
 }
-.nft{
-    
-    width: 50%;
-    height: 100%;
-    /* margin-top: 0;
-    padding-top:0 ; */
-}
+
 .other{
     
     width: 50%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight:bold;
+  
 }
+
 .navTitle{
     margin-right: 30%;
     display: flex;
@@ -519,9 +585,10 @@
 .navContent{
     display: flex;
     justify-content: center;
-    margin-right: 33%;
+    margin-right: 14%;
     font-weight: bold;
     font-family: 'Monument','sans-serif';
+    font-size: 14px;
 
 
 }
@@ -566,6 +633,102 @@
     font-weight: bold;
       
 }
+.other p{
+    margin-bottom: 10px;
+    font-size: 1.2vw;
+}
+.other h1{
+    font-size: 6.5vw;
+    font-weight: bold;
+  
+
+}
+.other span{
+    color: #4AED52;
+ 
+}
+.boxNFT{
+   
+    height: 526px;
+    width: 434px;
+    margin-left: 5%;
+    margin-top: 6.5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 6px;
+background-position:20%;
+background-size: cover;
+  
+}
+.nft{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 30%;
+
+}
+
+.mb-7{
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+.wrapper1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: -10.4%;
+    background-color: #4AED52;
+}
+.banner{
+    width: 100%;
+    background-color: #03030A;
+  
+    
+}
+.man{
+    height: 30vw;
+    width: auto;
+    margin-right:-10% ;
+    z-index:1;
+    margin-top: 3%;
+    
+
+}
+.blurBox{
+    backdrop-filter: blur(13px);
+    border-radius: 10px;
+    height: 35vw;
+    width: auto;
+}
+.banner2{
+    width: 100%;
+    background-color: #03030A;
+    
+
+}
+.youtube{
+    width: 65vw;
+    height: 40vw;
+    margin-left: 0;
+    margin-left: -75%;
+   
+}
+.box{
+    width: 70vw;
+    height: auto;
+    margin-top: 15%;
+}
+
+
+
+
 
 
 
