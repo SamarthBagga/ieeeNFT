@@ -23,7 +23,7 @@ const Hero: types.Brick = () => {
 
 
   return (
-    <div className="flexing hero" id="hero">
+    <div className="hero" id="hero">
     <div className="other">
         <p>MUJ's First and largest NFT Giveaway</p>
         <h1>IEEE NFT <br/> <span>GIVEAWAY</span></h1>
@@ -36,7 +36,7 @@ const Hero: types.Brick = () => {
 
         <button className='button'>Free NFT</button>
       </div>
-          <div className="boxNFT">
+         
           {/* <Image
       src="/bg.svg"
       alt="Picture of the author"
@@ -45,7 +45,7 @@ const Hero: types.Brick = () => {
       className="box"
     
      /> */}
-     </div>
+     
     <div className="nft">
 
     <Canvas className="canvas">
