@@ -205,13 +205,15 @@
     color: #fff;
     height: 100vh;
     width: 100%;
-    /* background-image: url("../public/home.svg"); */
+    background-image: url("../public/home.svg");
     background-position:bottom;
     background-size: cover;
     margin-top: 90px;
     display: flex;
     flex-direction: row;
-    background-color: yellow;
+    justify-content:center ;
+    text-align: center;
+  
 
     
     
@@ -241,7 +243,7 @@
 .nft {
     width: 50%;
     height: 100vh;
-    background-color: green;
+    /* background-color: green; */
     text-align: right;
     color: white;
 }
@@ -250,7 +252,9 @@
     width: 50%;
     color: green;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
+    margin-top: 10vw;
+    
 }
 
 
@@ -275,18 +279,26 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
 @media screen and (max-width:940px) {
    .hero{
     flex-direction: column;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     background-color: yellow;
     
   
    }
    .other{
-    width: 100%;
+    width: 100% !important;
     height: 50%;
-    width: 100%;
+    margin-top: 15vw !important;
+    
+    
     
 
+   }
+   .other p{
+    font-size: 5vw !important;
+   }
+   .other h1{
+    font-size: 19vw !important ;
    }
    .nft{
     width: 100%;
@@ -483,11 +495,16 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
         max-width: 100%;
         grid-template-columns: 1fr;
         grid-gap: 30px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
     }
 
-    .demo iframe {
-        width: 100vw;
-        height: 70vw;
+    iframe {
+        width: 80vw;
+        height: 40vw;
+        margin-left: 0;
     }
 }
 
@@ -553,6 +570,26 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
     .about button {
         margin-bottom: 1rem;
     }
+    .about{
+        height: 1000px !important;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .man{
+        width: 70vw !important;
+        height: 60vw !important;
+        /* margin-bottom: vw; */
+       
+       
+    }
+    .blurBox{
+        
+        height: 60vw !important;
+        width: 90vw !important;
+        margin-bottom: 200vw !important;
+        margin-top: 0 !important;
+    }
 }
 .canvas{
     height: 500px;
@@ -567,7 +604,7 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
 
 
 .navTitle{
-    margin-right: 30%;
+    margin-right: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -576,7 +613,7 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
 .navContent{
     display: flex;
     justify-content: center;
-    margin-right: 14%;
+    margin-right: 3vw;
     font-weight: bold;
     font-family: 'Monument','sans-serif';
     font-size: 14px;
@@ -595,18 +632,19 @@ box-shadow: 2px 15px 25px rgba(145, 92, 182, .4);
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin-right:1vw ;
   cursor: pointer;
   font-weight: bold;
   font-family: 'Monument','sans-serif';
+  width: 35vw;
 
     
 }
-.loginBTN{
+/* .loginBTN{
     
-    width: 150px;
+    width: 2vw;
     
-}
+} */
 .design{
     display: flex;
     align-items:center;

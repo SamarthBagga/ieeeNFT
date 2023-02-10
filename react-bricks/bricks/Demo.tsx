@@ -18,9 +18,9 @@ const Demo: types.Brick = () => {
     <div className='demo' id='demo'>
     <div className='container'>
         
-        {/* <div className='col-2'>
+        <div className='col-2'>
             <iframe className="youtube" src='https://www.youtube.com/embed/oeqP5JtihMA' title='Youtube video player' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-        </div> */}
+        </div>
     </div>
 </div>
 

@@ -9,6 +9,7 @@ import About from './About'
 import Demo from './Demo'
 import Testimonials from './Testimonials'
 import Three from './Three'
+import Wallet from './Wallet'
 const bricks: types.Brick<any>[] = [
   ...website, // React Bricks UI
   ...blog,
@@ -20,6 +21,7 @@ const bricks: types.Brick<any>[] = [
   Demo,
   Testimonials,
   Three,
+  Wallet,
 
   
   

@@ -8,7 +8,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from "./images/logo.jpg";
 import { Image } from "react-bricks";
 import {Link} from "react-scroll"
-
+import Linker from "next/link";
 
 
 
@@ -51,7 +51,7 @@ const Navbar: types.Brick = () => {
             </li>
             
             </div>
-            <div className="Login"><button className="loginBTN">Login</button></div>
+            <div className="Login"><button className="loginBTN"><Linker href="/claim">Login</Linker></button></div>
             {/* <div className="design"></div> */}
             
         </ul>
