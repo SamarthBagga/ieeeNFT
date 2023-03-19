@@ -7,7 +7,7 @@ import ScrollSpy from "react-ui-scrollspy";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from "./images/logo.jpg";
 import { Image } from "react-bricks";
-import {Link} from "react-scroll"
+  import {Link} from "react-scroll"
 import Linker from "next/link";
 
 

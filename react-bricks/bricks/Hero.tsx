@@ -49,7 +49,7 @@ const Hero: types.Brick = () => {
     <div className="nft">
 
     <Canvas className="canvas">
-    <OrbitControls enableZoom={false} autoRotate={true}  autoRotateSpeed={15.0}/>
+    <OrbitControls enableZoom={false} autoRotate={true}  autoRotateSpeed={10.0}/>
     <ambientLight isAmbientLight={true} color={"rgb(255, 0, 0)"} isLight={true}  intensity={5.0} />
     <directionalLight position={[-2,5,2]} intensity={5}/>
     <Suspense fallback={null}>
