@@ -10,9 +10,7 @@ import logo from "./images/logo.jpg";
 import { Canvas } from "@react-three/fiber";
 import Box from "../../components/Box";
 import { OrbitControls, } from "@react-three/drei";
-import Sphere from "../../components/AnimatedSphere";
 import Monke from "../../components/Model"
-import Image from 'next/image'
 
 
 
