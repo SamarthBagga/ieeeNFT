@@ -51,7 +51,6 @@ const Navbar: types.Brick = () => {
             </li>
             
             </div>
-            <div className="Login"><button className="loginBTN"><Linker href="/claim">Login</Linker></button></div>
             {/* <div className="design"></div> */}
             
         </ul>
